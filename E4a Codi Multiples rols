@@ -1,0 +1,12 @@
+select 
+    person_name,
+    movie_id,
+	count(distinct person_id, role_id) as count_distinct_person_role
+From movies.tb_movie_person
+LEFT JOIN movies.tb_person
+USING (person_id)
+LEFT JOIN movies.tb_role
+USING (role_id)
+Group by person_name
+having count_distinct_person_role >= 2
+order by count_distinct_person_role DESC;
