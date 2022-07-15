@@ -1,0 +1,6 @@
+# PPdlO La descripcio de totes les taules
+describe movies.tb_genre;
+DESCRIBE movies.tb_movie;
+describe movies.tb_movie_person;
+describe movies.tb_person;
+describe movies.tb_role;
