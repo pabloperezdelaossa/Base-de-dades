@@ -1,0 +1,9 @@
+# PPdlO 3er exercici
+# nom del gènere i el nombre total de pel·lícules d'aquest gènere
+# i ordenar-ho per ordre descendent de nombre total de pel·lícules. 
+
+SELECT movie_genre_id, count(*)
+FROM movies.tb_movie
+LEFT JOIN movies.tb_genre
+ON (movie_genre_id = genre_id)
+GROUP BY movie_genre_id;
