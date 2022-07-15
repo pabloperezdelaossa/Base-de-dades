@@ -1,0 +1,11 @@
+# PPdlO 2on exercici: nom, país i la data de naixement sense una data de mort
+# Ordenar les dades de la persona més vella a la persona més jove
+# Les dades que vull son a la taula tb_person
+
+SELECT person_name, person_country, person_dob
+FROM movies.tb_person
+WHERE person_dod IS NULL
+ORDER BY person_dob;
+
+# PPdlO Fi del segon exercici: Per algun motiu em funciona si faig servir IS NULL
+# pero entenc que huaria de fer servir IS NOT NULL
