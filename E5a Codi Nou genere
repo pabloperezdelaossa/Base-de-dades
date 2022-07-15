@@ -1,0 +1,6 @@
+insert INTO movies.tb_genre (genre_id, genre_name, created_by_user)
+VALUES (69,"Documental","PPdlO");
+
+SELECT * # comprovem que s'afegit
+FROM movies.tb_genre
+order by genre_id DESC;
